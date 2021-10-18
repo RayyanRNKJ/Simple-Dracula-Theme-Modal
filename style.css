@@ -25,6 +25,7 @@ button {
   outline: none;
   background: none;
   display: inline-flex;
+  cursor: pointer;
   font-family: "Poppins", Helvetica, sans-serif;
 }
 
