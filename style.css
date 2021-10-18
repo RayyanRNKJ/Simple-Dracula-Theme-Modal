@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  overflow-x: hidden;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
