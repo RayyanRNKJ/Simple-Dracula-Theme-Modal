@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+.section {
+  height: 100%;
+}
+
 body {
   background: #ffffff;
   overflow-x: hidden;
@@ -24,4 +30,22 @@ button {
 
 .flex-column {
   flex-direction: column;
+}
+
+.open-modal-btn {
+  background: #000000;
+  color: #ffffff;
+  padding: 1em 5em;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 0.5em;
+}
+
+.open-modal-btn:hover{
+    background: #000000ec;
+}
+
+.open-modal-btn:focus{
+    background: #000000ec;
+    box-shadow: 0 0 0 5px #00000050;
 }
