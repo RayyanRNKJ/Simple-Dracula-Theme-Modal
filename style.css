@@ -38,6 +38,10 @@ button {
   flex-direction: column;
 }
 
+.set-theme {
+  background: #282942;
+}
+
 .open-modal-btn {
   background: #000000;
   color: #ffffff;
@@ -54,6 +58,20 @@ button {
 .open-modal-btn:focus {
   background: #000000ec;
   box-shadow: 0 0 0 5px #00000050;
+}
+
+.open-modal-btn-set-theme {
+  background: #bd93f9;
+  color: #282942;
+}
+
+.open-modal-btn-set-theme:hover {
+  background: #bd93f9ec;
+}
+
+.open-modal-btn-set-theme:focus {
+  background: #bd93f9ec;
+  box-shadow: 0 0 0 5px #bd93f950;
 }
 
 .modal-container {
@@ -134,4 +152,16 @@ button {
 .theme-btn:focus {
   background: #bd93f9ec;
   box-shadow: 0 0 0 5px #bd93f950;
+}
+
+.hide-set-theme-btn {
+  display: none;
+}
+
+.unset-theme-btn {
+  display: none;
+}
+
+.show-unset-theme-btn {
+  display: inline-flex;
 }

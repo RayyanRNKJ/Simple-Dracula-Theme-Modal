@@ -14,10 +14,10 @@
 
 <body>
     <section class="section flex-container flex-column">
-        <button class="open-modal-btn">Open Dracula</button>
+        <button class="open-modal-btn" onclick="openModal()">Open Dracula</button>
         <div class="modal-container">
             <div class="modal flex-container flex-column">
-                <button class="close-modal-btn">
+                <button class="close-modal-btn" onclick="closeModal()">
                     <svg class="close-icon" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_2:291)">
                             <path
@@ -154,7 +154,8 @@
                     <h1>Dracula Theme</h1>
                     <p>Dark theme for VS Code</p>
                 </div>
-                <button class="set-theme-btn theme-btn">Set Theme</button>
+                <button class="set-theme-btn theme-btn" onclick="setTheme()">Set Theme</button>
+                <button class="unset-theme-btn theme-btn" onclick="unSetTheme()">UnSet Theme</button>
             </div>
         </div>
     </section>

@@ -1,5 +1,3 @@
-const openModalBtn = document.querySelector(".open-modal-btn");
-const closeModalBtn = document.querySelector(".close-modal-btn")
 const modalContainer = document.querySelector(".modal-container");
 const modal = document.querySelector(".modal");
 
@@ -13,5 +11,23 @@ const closeModal = () => {
   modal.classList.remove("open-modal");
 };
 
-openModalBtn.addEventListener("click", openModal);
-closeModalBtn.addEventListener("click", closeModal);
+const body = document.querySelector("body");
+const openModalBtn = document.querySelector(".open-modal-btn");
+const setThemeBtn = document.querySelector(".set-theme-btn");
+const unSetThemeBtn = document.querySelector(".unset-theme-btn");
+
+const setTheme = () => {
+  body.classList.add("set-theme");
+  openModalBtn.classList.add("open-modal-btn-set-theme");
+  setThemeBtn.classList.add("hide-set-theme-btn");
+  unSetThemeBtn.classList.add("show-unset-theme-btn");
+  closeModal();
+};
+
+const unSetTheme = () => {
+  body.classList.remove("set-theme");
+  openModalBtn.classList.remove("open-modal-btn-set-theme");
+  setThemeBtn.classList.remove("hide-set-theme-btn");
+  unSetThemeBtn.classList.remove("show-unset-theme-btn");
+  closeModal();
+};
