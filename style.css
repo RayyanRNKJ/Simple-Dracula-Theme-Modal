@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 html,
 body,
 .section {
@@ -12,13 +16,15 @@ body,
 
 body {
   background: #ffffff;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: "Poppins", Helvetica, sans-serif;
 }
 
 button {
   border: none;
   outline: none;
+  background: none;
+  display: inline-flex;
   font-family: "Poppins", Helvetica, sans-serif;
 }
 
@@ -41,11 +47,91 @@ button {
   border-radius: 0.5em;
 }
 
-.open-modal-btn:hover{
-    background: #000000ec;
+.open-modal-btn:hover {
+  background: #000000ec;
 }
 
-.open-modal-btn:focus{
-    background: #000000ec;
-    box-shadow: 0 0 0 5px #00000050;
+.open-modal-btn:focus {
+  background: #000000ec;
+  box-shadow: 0 0 0 5px #00000050;
+}
+
+.modal-container {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.open-modal-container {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  background: #282942;
+  padding: 2.5em 2em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 50px #28294280;
+  position: relative;
+  gap: 1em;
+  transition: all 0.4s;
+  transform: translateY(30%);
+}
+
+.open-modal {
+  transform: translateY(0);
+}
+
+.close-icon {
+  width: 2em;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border-radius: 0.1em;
+}
+
+.close-modal-btn:hover {
+  opacity: 0.9;
+}
+
+.close-modal-btn:focus {
+  opacity: 0.9;
+  box-shadow: 0 0 0 3px #bd93f950;
+}
+
+.darucla-logo {
+  width: 10em;
+}
+
+.title-sub-title-container h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.title-sub-title-container p {
+  font-size: 1.24rem;
+  color: #c0c1da;
+}
+
+.theme-btn {
+  background: #bd93f9;
+  color: #282942;
+  padding: 0.7em 5em;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+}
+
+.theme-btn:hover {
+  background: #bd93f9ec;
+}
+
+.theme-btn:focus {
+  background: #bd93f9ec;
+  box-shadow: 0 0 0 5px #bd93f950;
 }
